@@ -1,0 +1,240 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffffd6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: url('header-background.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 300px 20px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+header h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 7%;
+}
+header h3 {
+    position: relative;
+    z-index: 2;
+    font-size: 1.5rem;
+    text-align: center;
+    padding:10px 60px;
+    color:rgb(174, 241, 241);
+}
+
+.navbar {
+    position: fixed;
+    z-index: 2;
+    background: rgba(255, 111, 97, 0.9);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ .highlight{
+    color: rgba(255, 111, 97, 0.9);
+    font-weight: bold;
+}
+
+.navbar.fixed-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 111, 97, 0.9);
+    z-index: 1000;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffe082;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.filter-section {
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+}
+.filter-section h2{
+    background-color: #fff8ebbe; 
+    padding: 15px; 
+    border-radius: 4px; 
+    color:  #c18008; 
+    margin-bottom: 2px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.filter-section h3{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.filter-section button{
+    display: block; 
+    margin: 20px auto;
+}
+
+.results-section {
+    width: 66%;
+    padding: 0px;
+} 
+
+h2 {
+    color: #ff6f61;
+}
+.ingredient-categories{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    font-size: 1.1em;
+    justify-items:auto;
+}
+.ingredient-categories label {
+    flex: 1 1 calc(50% - 10px);
+    margin: 5px auto;
+}
+.button-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items:center;
+    margin-top: 10px; 
+}
+.regular-button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.regular-button:hover {
+    background-color: #e65a50;
+}
+
+.highlight-background{
+    background-color: #da9d2d; 
+    padding: 15px; 
+    border-radius: 18px; 
+    color: #fff; 
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 97%;
+}
+.results-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.results-section .recipe-card {
+    background-color: transparent;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+    flex: 1 1 30%;
+    max-width: 30% ;
+    max-height: 24vw;
+    text-align: center;
+    margin-left: 15px;
+    position: relative; 
+}
+.results-section .regular-button{
+padding: 5px 10px;
+}
+
+.dish-image {
+    width: 100%;
+    height: 70%;
+}
+.recipe-card h3{
+    font-size: 1.6em;
+    margin-top: 5px;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+.image-button {
+    position: relative; 
+    right: 10px; 
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+}
+.button-img {
+    width: 30px; 
+    height: 30px; 
+}
+.no-results {
+        color:  #c18008; 
+        padding:50px;
+        margin: 300px auto;
+        text-align: center;
+        font-size: 1.8em;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.fridge{
+    width: 400px;
+    margin-left: 260px;
+}
+
+footer {
+    background-color: #ff6f61;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

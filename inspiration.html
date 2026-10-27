@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiration</title>
+    <link rel="stylesheet" href="style_inspiration.css">
+</head>
+<body>
+    <header>   
+        <h1>Get Inspired to Cook!</h1>
+        <h3>Discover delicious recipes for every meal of the day.</h3>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.php">Recipe Finder</a>
+                <button class="navbar-toggler" class="regular-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cookbook.php">Cookbook</a></li>
+                        <li class="nav-item"><a class="nav-link" href="inspiration.html">Inspiration</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Email Sign-up-->
+        <section class="email-signup">
+            <div class="container">
+                <div class="text">
+                    <h2>Sign Up for Weekly Recipe Inspiration!</h2>
+                    <p>Enter your email to receive the latest recipes and cooking tips right in your inbox!</p>
+                </div>
+                <div class="form" id="subscribeForm">
+                    <input type="email" placeholder="Enter your email" id="email" required>
+                    <button type="submit" id="subscribeBtn">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="inspiration-category" id="breakfast">
+            <h2>Breakfast Ideas<span class="arrow">▼</span></h2>
+            <div class="recipe-card">
+                <div class="recipe-content">
+                    <div class="recipe-text">
+                        <h3>Veggie Omelette</h3>
+                        <p>A fluffy omelette packed with fresh vegetables, perfect for a nutritious start.</p>
+                    </div>
+                    <div class="recipe-image">
+                        <img src="omelette.jpg" alt="omelette">
+                        <div class="full-recipe">
+                            <h3>Recipe</h3>
+                            <p>
+                            1. Beat 2–3 eggs in a bowl.<br>
+                            2. Chop spinach, mushrooms, and bell pepper.<br>
+                            3. Sauté veggies in a pan with a bit of oil.<br>
+                            4. Pour in eggs and cook until set.<br>
+                            5. Fold and serve warm.</p>                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card reverse">
+                <div class="recipe-content">
+                    <div class="recipe-text">
+                        <h3>Creamy Yogurt Parfait</h3>
+                        <p>A light and refreshing layered breakfast with yogurt, fruit, and crunch.</p>
+                    </div>
+                    <div class="recipe-image">
+                        <img src="yogurt.jpg" alt="Yogurt">
+                        <div class="full-recipe">
+                            <h3>Recipe</h3>
+                            <p>1. Spoon a layer of yogurt into a glass.<br>
+                               2. Add sliced fruit like banana or berries.<br>
+                               3. Sprinkle granola or crushed nuts.<br>
+                               4. Repeat layers and drizzle honey on top.<br>
+                               5. Serve chilled. </p>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="recipe-content">
+                    <div class="recipe-text">
+                        <h3>Fluffy Pancakes with Honey</h3>
+                        <p>Classic golden pancakes that are soft, fluffy, and perfect with natural honey and fresh berries.</p>
+                    </div>
+                    <div class="recipe-image">
+                        <img src="pancakes.jpg" alt="Pancakes">
+                        <div class="full-recipe">
+                            <h3>Recipe</h3>
+                            <p>1. In a bowl, mix 1 cup flour, 1 tbsp sugar, 1 tsp baking powder, and a pinch of salt. <br>
+                               2. Whisk in 1 egg, ¾ cup milk, and a splash of melted butter until smooth.<br>
+                               3. Heat a non-stick pan over medium heat and lightly grease it.<br>
+                               4. Pour batter into small circles and cook until bubbles form.<br>
+                               5. Flip and cook the other side until golden. <br>
+                               6. Serve with honey and fresh fruits.</p>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inspiration-category" id="lunch">
+            <h2>Lunch Ideas<span class="arrow">▼</span></h2>
+            <div class="recipe-card reverse">
+                <div class="recipe-content">
+                    <div class="recipe-text">
+                        <h3>Grilled Chicken Wrap</h3>
+                        <p>A light yet filling wrap with grilled chicken, veggies, and a creamy sauce.</p>
+                    </div>
+                    <div class="recipe-image">
+                        <img src="wrap.jpg" alt="chicken wrap">
+                        <div class="full-recipe">
+                            <h3>Recipe</h3>
+                            <p>1. Grill seasoned chicken breast and slice into strips.<br>
+                               2. Chop fresh vegetables.<br>
+                               3. Heat the tortillas in a pan for a minute on each side.<br>
+                               4. Fill a tortilla with chicken, lettuce, sliced tomato, cucumber, and a spoon of yogurt or cream sauce.<br>
+                               5. Roll tightly and cut in half.<br>
+                               6. Serve warm or chilled.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="recipe-content">
+                    <div class="recipe-text">
+                        <h3>Quinoa Veggie Bowl</h3>
+                        <p>A nourishing bowl with fluffy quinoa, fresh vegetables, and a tangy dressing.</p>
+                    </div>
+                    <div class="recipe-image">
+                        <img src="quinoa_bowl.jpg" alt="quinoa_bowl">
+                        <div class="full-recipe">
+                            <h3>Recipe</h3>
+                            <p>1. Cook quinoa according to package instructions.<br>
+                               2. Dice and sauté carrots, broccoli, and bell peppers until tender.<br>
+                               3. Mix veggies with quinoa.<br>
+                               4. Drizzle with olive oil and lemon juice, and toss to combine.</p>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card reverse">
+                <div class="recipe-content">
+                    <div class="recipe-text">
+                        <h3>Creamy Potato and Carrot Bake</h3>
+                        <p>A comforting oven-baked dish layered with potatoes, carrots, and a cheesy cream sauce—simple and satisfying.</p>
+                    </div>
+                    <div class="recipe-image">
+                        <img src="potato_bake.jpg" alt="potato bake">
+                        <div class="full-recipe">
+                            <h3>Recipe</h3>
+                            <p>1. Peel and thinly slice 2–3 medium potatoes and 2 carrots.<br>
+                               2. In a saucepan, heat 1 cup cream with ½ cup milk, a pinch of salt, pepper, and a bit of garlic or onion powder. Let it simmer for 2–3 minutes, stirring occasionally.<br>
+                               3. In the baking dish, layer potatoes and carrots alternately. Pour a bit of the warm cream mixture over each layer.<br>
+                               4. Top with grated cheese<br>
+                               5. Cover with foil and bake for 35–40 minutes, then uncover and bake for another 10 minutes until golden on top.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inspiration-category" id="dinner">
+            <h2>Dinner Ideas<span class="arrow">▼</span></h2>
+            <div class="recipe-card">
+                <div class="recipe-content">
+                    <div class="recipe-text">
+                        <h3>Beef and Broccoli Stir-Fry</h3>
+                        <p>A flavorful and quick dinner made with tender beef, crisp broccoli, and a savory soy-garlic sauce.</p>
+                    </div>
+                    <div class="recipe-image">
+                        <img src="beef_broccoli.jpg" alt="beef broccoli">
+                        <div class="full-recipe">
+                            <h3>Recipe</h3>
+                            <p>1. Slice beef strips thinly and season with a bit of salt and pepper.<br>
+                               2. In a pan, sauté the beef in a little oil until browned, then remove and set aside.<br>
+                               3. Stir-fry broccoli florets in the same pan with garlic for 2–3 minutes.<br>
+                               4. Add beef back, pour in soy sauce mixed with a splash of water and cornstarch, and stir until the sauce thickens.<br>
+                               5. Serve hot over steamed rice.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card reverse">
+                <div class="recipe-content">
+                    <div class="recipe-text">
+                        <h3> Creamy Mushroom and Quinoa Skillet</h3>
+                        <p>A hearty vegetarian skillet dinner with earthy mushrooms, fluffy quinoa, and a creamy finish.</p>
+                    </div>
+                    <div class="recipe-image">
+                        <img src="mushroom_quinoa.jpg" alt="creamy mushroom quinoa">
+                        <div class="full-recipe">
+                            <h3>Recipe</h3>
+                            <p>1. Cook quinoa in water or broth until fluffy, then set aside.<br>
+                               2. In a skillet, cook chopped onion and mushrooms in olive oil until soft.<br>
+                               3. Stir in cream and season with salt, pepper, and thyme.<br>
+                               4. Add the cooked quinoa, mix well, and heat through.<br>
+                               5. Serve with a sprinkle of grated cheese if desired.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="recipe-content">
+                    <div class="recipe-text">
+                        <h3>Baked Salmon with Herbed Potatoes</h3>
+                        <p>A light yet filling dinner featuring oven-baked salmon paired with seasoned potato wedges.</p>
+                    </div>
+                    <div class="recipe-image">
+                        <img src="salmon_potatoes.jpg" alt="baked salmon and potatoes">
+                        <div class="full-recipe">
+                            <h3>Recipe</h3>
+                            <p>1. Preheat oven to 200°C (390°F).<br>
+                               2. Toss potato wedges with olive oil, salt, pepper, and rosemary. Spread on a baking tray.<br>
+                               3. Place salmon fillets next to the potatoes, season with lemon juice, herbs, and a little butter.<br>
+                               4. Bake everything together for about 20–25 minutes, or until the potatoes are crisp and salmon is flaky.<br>
+                               5. Serve warm with a side of cucumber salad.</p>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inspiration-category" id="desserts">
+            <h2>Dessert Ideas<span class="arrow">▼</span></h2>
+            <div class="recipe-card reverse">
+                <div class="recipe-content">
+                    <div class="recipe-text">
+                        <h3>Chocolate Mousse</h3>
+                        <p>A rich and creamy chocolate dessert perfect for any occasion.</p>
+                    </div>
+                    <div class="recipe-image">
+                        <img src="mousse.jpg" alt="Chocolate Mousse">
+                        <div class="full-recipe">
+                            <h3>Recipe</h3>
+                            <p>1. Melt dark chocolate.<br>
+                               2. Whip cream and fold into the chocolate.<br>
+                               3. Chill in the fridge and serve.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="recipe-content">
+                    <div class="recipe-text">
+                        <h3>Creamy Rice Pudding</h3>
+                        <p>A warm and comforting dessert made from simple ingredients like rice, milk, and a touch of cinnamon.</p>
+                    </div>
+                    <div class="recipe-image">
+                        <img src="rice_pudding.jpg" alt="rice pudding">
+                        <div class="full-recipe">
+                            <h3>Recipe</h3>
+                            <p>1. In a saucepan, simmer cooked rice with milk and a bit of sugar over low heat.<br>
+                               2. Stir frequently until it thickens and becomes creamy.<br>                            
+                               3. Add a splash of vanilla extract and a pinch of cinnamon.<br>
+                               4. Serve warm or chilled, topped with raisins or a sprinkle of cinnamon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card reverse">
+                <div class="recipe-content">
+                    <div class="recipe-text">
+                        <h3>Vanilla Yogurt Cake</h3>
+                        <p>A moist, fluffy cake with a light vanilla flavor and a tangy touch of yogurt. Perfect on its own or with fresh fruit.</p>
+                    </div>
+                    <div class="recipe-image">
+                        <img src="vanilla_cake.jpg" alt="vanilla cake">
+                        <div class="full-recipe">
+                            <h3>Recipe</h3>
+                            <p>1. Preheat your oven to 175°C (350°F) and grease a round cake pan. <br>
+                               2. In a bowl, mix 1 cup plain yogurt, ¾ cup sugar, and 2 eggs, add ½ cup oil, 1 tsp vanilla extract, and stir until smooth.<br>
+                               3. Sift in 1½ cups flour, 2 tsp baking powder, and a pinch of salt. Mix gently until just combined.<br>
+                            4. Pour the batter into the pan and bake for 30–35 minutes, or until a toothpick comes out clean.<br>
+                            5. Let it cool, then dust with powdered sugar or top with berries and cream.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Recipe Finder</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const categories = document.querySelectorAll(".inspiration-category");
+    
+            categories.forEach(category => {
+                const header = category.querySelector("h2");
+                const recipes = category.querySelectorAll(".recipe-card");
+    
+                recipes.forEach(recipe => recipe.classList.remove("show"));
+    
+                header.addEventListener("click", () => {
+                    category.classList.toggle("active");
+                    recipes.forEach(recipe => recipe.classList.toggle("show"));
+                });
+            });
+        });
+    // Subscription form
+        const subscribeButton = document.querySelector(".form button");
+        const emailInput = document.getElementById("email");
+
+        subscribeButton.addEventListener("click", () => {
+            if (emailInput.value.trim() !== "") {
+                emailInput.value = "";
+                alert("Thanks for subscribing!");
+            }
+        });
+        
+    </script>
+    
+</body>
+</html>
+    

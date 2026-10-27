@@ -1,0 +1,217 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f4e3;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4b3e2f;
+    margin: 0;
+}
+.navbar {
+    position: fixed;
+    z-index: 2;
+    background: rgba(255, 111, 97, 0.9);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.navbar.fixed-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 111, 97, 0.9);
+    z-index: 1000;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffe082;
+}
+
+
+.book-container {
+    position: relative;
+    width: 400px;
+    height: 550px;
+    margin:0;
+}
+
+.book {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    perspective: 3000px;
+    margin-top: 65px;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    background: rgb(248, 248, 243);
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: transform 0.8s;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    transform-origin: left;
+    transform-style: preserve-3d;
+}
+.page .description {
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #7a5e4a;
+}
+.page .instructions {
+    font-size: 17px;
+    line-height: 1.6;
+    white-space: pre-wrap; 
+}
+.page h2 {
+    font-size: 28px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #d46a6a;
+    margin-bottom: 15px;
+    border-bottom: 2px dotted #deb887;
+    padding-bottom: 10px;
+}
+
+.cover {
+    background: url('cookbook-cover.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.nav-arrow:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.left-arrow {
+    left: -40px;
+}
+
+.right-arrow {
+    right: -40px;
+}
+.book .page:nth-child(even) {
+    transform-origin: right;
+}
+
+.recipe-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.recipe-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px double #d4b8a4;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.recipe-image {
+    filter: sepia(10%) contrast(95%) brightness(98%);
+}
+.end-message {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f1e3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.end-message h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.end-message p {
+    font-size: 1.1em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 20px;
+    background-color: #feaf82;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #fb884b;
+}
+.remove-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    z-index: 10;
+    transition: transform 0.2s ease;
+}
+
+.remove-button:hover {
+    transform: scale(1.05);
+    color: #000;
+}
+
+
+
+@media (max-width: 600px) {
+    .book-container {
+      width: 90vw;
+      height: 60vh;
+    }
+  }
+  
+
